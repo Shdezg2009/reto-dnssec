@@ -15,3 +15,4 @@ __pycache__/
 
 # Laboratorio efimero generado por construir.sh
 lab/
+/verificacion_dnssec.csv

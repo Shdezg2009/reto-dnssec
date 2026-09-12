@@ -1,0 +1,104 @@
+lab
+├── alpha
+│   ├── zones
+│   │   └── db.alpha.unsigned
+│   └── named.conf
+├── badalg
+│   ├── zones
+│   │   ├── db.badalg
+│   │   ├── db.badalg.signed
+│   │   ├── dsset-badalg.test.
+│   │   ├── Kbadalg.test.+013+40158.key
+│   │   ├── Kbadalg.test.+013+40158.private
+│   │   ├── Kbadalg.test.+013+44985.key
+│   │   └── Kbadalg.test.+013+44985.private
+│   └── named.conf
+├── beta
+│   ├── zones
+│   │   ├── db.beta
+│   │   ├── db.beta.signed
+│   │   ├── dsset-beta.signed.
+│   │   ├── Kbeta.signed.+013+05821.key
+│   │   ├── Kbeta.signed.+013+05821.private
+│   │   ├── Kbeta.signed.+013+29910.key
+│   │   └── Kbeta.signed.+013+29910.private
+│   └── named.conf
+├── delta
+│   ├── zones
+│   │   ├── db.delta
+│   │   ├── db.delta.signed
+│   │   ├── dsset-delta.signed.
+│   │   ├── Kdelta.signed.+008+45692.key
+│   │   ├── Kdelta.signed.+008+45692.private
+│   │   ├── Kdelta.signed.+008+62256.key
+│   │   └── Kdelta.signed.+008+62256.private
+│   └── named.conf
+├── expired
+│   ├── zones
+│   │   ├── db.expired
+│   │   ├── db.expired.signed
+│   │   ├── dsset-expired.test.
+│   │   ├── Kexpired.test.+013+18641.key
+│   │   ├── Kexpired.test.+013+18641.private
+│   │   ├── Kexpired.test.+013+50114.key
+│   │   └── Kexpired.test.+013+50114.private
+│   └── named.conf
+├── gamma
+│   ├── zones
+│   │   └── db.gamma
+│   └── named.conf
+├── nods
+│   ├── zones
+│   │   ├── db.nods
+│   │   ├── db.nods.signed
+│   │   ├── dsset-nods.test.
+│   │   ├── Knods.test.+013+16549.key
+│   │   ├── Knods.test.+013+16549.private
+│   │   ├── Knods.test.+013+37741.key
+│   │   └── Knods.test.+013+37741.private
+│   └── named.conf
+├── recursive1
+│   ├── zones
+│   │   └── db.root.hints
+│   └── named.conf
+├── recursive2
+│   ├── zones
+│   │   └── db.root.hints
+│   └── named.conf
+├── root
+│   ├── zones
+│   │   ├── db.root
+│   │   ├── db.root.signed
+│   │   ├── dsset-.
+│   │   ├── K.+013+16989.key
+│   │   ├── K.+013+16989.private
+│   │   ├── K.+013+52855.key
+│   │   └── K.+013+52855.private
+│   └── named.conf
+├── signed
+│   ├── zones
+│   │   ├── db.signed
+│   │   ├── db.signed.signed
+│   │   ├── dsset-signed.
+│   │   ├── Ksigned.+013+22337.key
+│   │   ├── Ksigned.+013+22337.private
+│   │   ├── Ksigned.+013+45734.key
+│   │   └── Ksigned.+013+45734.private
+│   └── named.conf
+├── test
+│   ├── zones
+│   │   ├── db.test
+│   │   ├── db.test.signed
+│   │   ├── dsset-test.
+│   │   ├── Ktest.+013+42552.key
+│   │   ├── Ktest.+013+42552.private
+│   │   ├── Ktest.+013+56997.key
+│   │   └── Ktest.+013+56997.private
+│   └── named.conf
+├── unsigned
+│   ├── zones
+│   │   └── db.unsigned
+│   └── named.conf
+└── docker-compose.yml
+
+27 directories, 75 files
