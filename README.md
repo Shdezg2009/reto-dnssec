@@ -36,3 +36,16 @@ Solo se versiona material público (llaves públicas, DS, zonas firmadas).
 cd act3-4-arbol
 docker compose up -d
 ```
+
+## Replicabilidad (reconstruir desde cero)
+El laboratorio se regenera completo con un solo comando. Genera llaves y firmas
+frescas cada vez, así que no depende de material criptográfico versionado ni de
+firmas caducadas.
+
+```bash
+./construir.sh   # levanta y firma todo el árbol (~30s)
+./limpiar.sh     # borra contenedores, red y archivos generados
+```
+
+Requisitos: Docker, y la imagen `internetsystemsconsortium/bind9:9.18`.
+La carpeta `lab/` que genera el script está excluida del repo (es efímera).

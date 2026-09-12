@@ -12,3 +12,6 @@ __pycache__/
 # Temporales del sistema
 .DS_Store
 *.swp
+
+# Laboratorio efimero generado por construir.sh
+lab/
