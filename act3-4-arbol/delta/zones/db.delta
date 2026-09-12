@@ -1,0 +1,7 @@
+$TTL 86400
+@   IN  SOA ns.delta.signed. admin.delta.signed. (
+        2026090101
+        3600 900 604800 86400 )
+@       IN  NS  ns.delta.signed.
+ns      IN  A   172.30.0.80
+www     IN  A   172.30.0.80

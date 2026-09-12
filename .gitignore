@@ -1,0 +1,14 @@
+# ===== NUNCA subir llaves privadas DNSSEC =====
+K*.private
+*.private
+
+# Journals y estado runtime de BIND
+*.jnl
+managed-keys.bind*
+*.mkeys
+__pycache__/
+*.pyc
+
+# Temporales del sistema
+.DS_Store
+*.swp

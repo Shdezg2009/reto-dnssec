@@ -1,0 +1,135 @@
+.
+├── alpha
+│   ├── zones
+│   │   └── db.alpha.unsigned
+│   └── named.conf
+├── badalg
+│   ├── zones
+│   │   ├── db.badalg
+│   │   ├── db.badalg.signed
+│   │   ├── dsset-badalg.test.
+│   │   ├── Kbadalg.test.+013+19139.key
+│   │   ├── Kbadalg.test.+013+19139.private
+│   │   ├── Kbadalg.test.+013+49701.key
+│   │   └── Kbadalg.test.+013+49701.private
+│   └── named.conf
+├── beta
+│   ├── zones
+│   │   ├── db.beta
+│   │   ├── db.beta.signed
+│   │   ├── dsset-beta.signed.
+│   │   ├── Kbeta.signed.+013+14925.key
+│   │   ├── Kbeta.signed.+013+14925.private
+│   │   ├── Kbeta.signed.+013+60359.key
+│   │   └── Kbeta.signed.+013+60359.private
+│   └── named.conf
+├── delta
+│   ├── zones
+│   │   ├── db.delta
+│   │   ├── db.delta.signed
+│   │   ├── dsset-delta.signed.
+│   │   ├── Kdelta.signed.+008+12813.key
+│   │   ├── Kdelta.signed.+008+12813.private
+│   │   ├── Kdelta.signed.+008+50536.key
+│   │   └── Kdelta.signed.+008+50536.private
+│   └── named.conf
+├── epsilon
+│   ├── zones
+│   │   └── db.epsilon.unsigned
+│   └── named.conf
+├── expired
+│   ├── zones
+│   │   ├── db.expired
+│   │   ├── db.expired.signed
+│   │   ├── dsset-expired.test.
+│   │   ├── Kexpired.test.+013+27911.key
+│   │   ├── Kexpired.test.+013+27911.private
+│   │   ├── Kexpired.test.+013+53998.key
+│   │   └── Kexpired.test.+013+53998.private
+│   └── named.conf
+├── gamma
+│   ├── zones
+│   │   └── db.gamma
+│   └── named.conf
+├── nods
+│   ├── zones
+│   │   ├── db.nods
+│   │   ├── db.nods.signed
+│   │   ├── dsset-nods.test.
+│   │   ├── Knods.test.+013+37733.key
+│   │   ├── Knods.test.+013+37733.private
+│   │   ├── Knods.test.+013+62322.key
+│   │   └── Knods.test.+013+62322.private
+│   └── named.conf
+├── recursive1
+│   ├── zones
+│   │   └── db.root.hints
+│   └── named.conf
+├── recursive2
+│   ├── zones
+│   │   └── db.root.hints
+│   └── named.conf
+├── root
+│   ├── zones
+│   │   ├── db.root
+│   │   ├── db.root.signed
+│   │   ├── dsset-.
+│   │   ├── K.+013+25473.key
+│   │   ├── K.+013+25473.private
+│   │   ├── K.+013+43577.key
+│   │   └── K.+013+43577.private
+│   └── named.conf
+├── signed
+│   ├── zones
+│   │   ├── db.signed
+│   │   ├── db.signed.signed
+│   │   ├── dsset-signed.
+│   │   ├── Ksigned.+013+13706.key
+│   │   ├── Ksigned.+013+13706.private
+│   │   ├── Ksigned.+013+44918.key
+│   │   └── Ksigned.+013+44918.private
+│   └── named.conf
+├── test
+│   ├── zones
+│   │   ├── db.test
+│   │   ├── db.test.signed
+│   │   ├── dsset-test.
+│   │   ├── Ktest.+013+57199.key
+│   │   ├── Ktest.+013+57199.private
+│   │   ├── Ktest.+013+63314.key
+│   │   └── Ktest.+013+63314.private
+│   └── named.conf
+├── unsigned
+│   ├── zones
+│   │   └── db.unsigned
+│   └── named.conf
+├── zeta
+│   ├── zones
+│   │   └── db.zeta.unsigned
+│   └── named.conf
+├── arbol_dnslab.txt
+├── docker-compose.yml
+├── docker-compose.yml.bak
+├── extraer_dns.py
+├── registros_act2.csv
+├── verificacion_dnssec.csv
+├── verificar_dnssec.py
+└── walk_nsec.sh
+
+31 directories, 86 files
+NAME         STATUS
+alpha        Up About an hour
+badalg       Up 19 minutes
+beta         Up About an hour
+delta        Up 19 minutes
+epsilon      Up 18 seconds
+expired      Up 19 minutes
+gamma        Up About an hour
+nods         Up 19 minutes
+recursive1   Up About an hour
+recursive2   Up 18 minutes
+root         Up 19 minutes
+signed       Up 19 minutes
+test         Up 19 minutes
+unsigned     Up 17 seconds
+zeta         Up 18 seconds

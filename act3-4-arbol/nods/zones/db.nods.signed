@@ -1,0 +1,70 @@
+; File written on Fri Sep 11 20:51:39 2026
+; dnssec_signzone version 9.18.50
+nods.test.		86400	IN SOA	ns.nods.test. admin.nods.test. (
+					2026090101 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					nrnM9bgZl8z/exrl+zBjDBcoOnJcf698W11J
+					65/uYFLHvkk/Kym1QjsIlnOaaiF21tQJ99mu
+					bVhdnHEqpfPzhA== )
+			86400	NS	ns.nods.test.
+			86400	RRSIG	NS 13 2 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					pVCs4z68DnkVGwMfgrQvPnEkNXRbn2Ft5Ikp
+					rfUlJOT4yflFHUavw2FFv2j6aZjJs0ZKT3YE
+					07h03VEf5egWCQ== )
+			86400	NSEC	ns.nods.test. NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 13 2 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					73hsW27xViilX9GQuA7xd4TkkkhnA3v6Y1Ay
+					yIAZ58Shs/HkbLnYbcT/PRA9N6JVRbllXC8G
+					US0o5W6bsdeFZg== )
+			86400	DNSKEY	256 3 13 (
+					utEiMJQJQ4MoYTfdaPY2il+iJhIo9Dttuk/k
+					a8M+AI1Vq1GqEgxDOSI9KirTUbXJ73qf55ov
+					I5RKCQkxv9m8Ig==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 62322
+			86400	DNSKEY	257 3 13 (
+					A53R3mcfDwuIHBYtwv2MZBYTdpCmlBYPhbXu
+					mIev7BQGXlLjCwPk9nLkyPfeYdYq+a+HxGoE
+					m358NG7Gji3q5g==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 37733
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261011195139 20260911195139 37733 nods.test.
+					p52brmTx7kxZ2ZIdNpyRVisbuQLQqlMIzdTd
+					UVuA7gGsLwLLepOxnEdLYiyHJX8ptDsCsV8x
+					2FIZu0ihPzZ9ZQ== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					reUDJc/t7wfTMinIIDIUox1Q/XUtBPq9oObU
+					KGhlsbdEXumpngZ4e4Mai/01ECOerDU2LUep
+					dVfi0x/0Kqip2A== )
+ns.nods.test.		86400	IN A	172.30.0.72
+			86400	RRSIG	A 13 3 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					0BBIvx83CqbntlIcQV7w/8nryl3Q5dfiIzzK
+					SAw+W/Uvfa80IAc4S4wwmT4nwZSpEEcywpaN
+					N3WuVlTMvmj39w== )
+			86400	NSEC	www.nods.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					bwpJrKFdpRW254iWKaIba8hOAuWFLKy0Cn4E
+					VUCHY1o0YRQhogSvLF5B21VC+zNrFFj4xWHl
+					GKS+9tRK31/ntg== )
+www.nods.test.		86400	IN A	172.30.0.72
+			86400	RRSIG	A 13 3 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					5lNRmK2pBkJB924WRsin2HEcf9J7ZOgicZZ+
+					82YHmqRlz/OrYPifS0KpZSv9V+PDlEcP/5Ih
+					pFKvvAMzFs165A== )
+			86400	NSEC	nods.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261011195139 20260911195139 62322 nods.test.
+					sn72A1ugQub3ZOuzPEpPah58sqOFdg1/0PaT
+					UKn9zweaDGhnVR8uU2wKg/KBt85VGDiHmKjP
+					9UQsGaVKdL3QDA== )

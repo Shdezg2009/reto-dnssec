@@ -1,0 +1,70 @@
+; File written on Fri Sep 11 20:51:39 2026
+; dnssec_signzone version 9.18.50
+expired.test.		86400	IN SOA	ns.expired.test. admin.expired.test. (
+					2026090101 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					4AsB4dTtWlIu7eHKn8sx/VGvYFuH5sjsJ0WR
+					9UEtMeM+lRBykAoU6JKrkewz61d1JWlsS7RS
+					PuRgtaFvppcM4Q== )
+			86400	NS	ns.expired.test.
+			86400	RRSIG	NS 13 2 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					SLNE1hdSOHqig3XvFJr0dnVbNRZjz15ofgaN
+					8f9YQi5JdhnW3+ASNY4P0bOqKUUdjDxkUK2D
+					uAX94areUI2ykg== )
+			86400	NSEC	ns.expired.test. NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 13 2 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					qjfv3rpzR06J2gzjntwybaQDcG7WLROppeEN
+					/LWmK8TbBZkg94U46wfe4bPNikHWQaK8PVVC
+					MYvY+shifU9AIA== )
+			86400	DNSKEY	256 3 13 (
+					dnfJGSSjcHLI8SLmyVarA3gpMqblm+/eSe1/
+					4oqjWXvj6/fzI/3DRVan4xOcP6ucwTl/QLhj
+					DEyyBtiXNz5gDg==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 53998
+			86400	DNSKEY	257 3 13 (
+					pC6LOx0/0gtqgzEd0NOMAQeH7c3h5peu6311
+					wJMKOETQMb/9Eh2ArfpIGFIxrZijBniBAxUI
+					dzmFnTzb4hL+Jw==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 27911
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20260910205139 20260812205139 27911 expired.test.
+					973g3QJ7unDHPRFDRkjo7SSN3p0kMd0cLzaf
+					vsU8oNTExi1ZxVQV5lTtLfUP6+8KXkp+TMDA
+					S2/RMYmH+E57yw== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					YsBem337vKjuuDPc1I2H2EfIjhszQKocnkc/
+					fSkCMWkE7PHa+MUzJ0CeuoHrd3Plyo1ypIBu
+					BcTEUqeD0PBRoQ== )
+www.expired.test.	86400	IN A	172.30.0.71
+			86400	RRSIG	A 13 3 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					Tprf8qsJtcJ5CQnXdjLTlGIdswPM+Q6UIY5F
+					HZDorAeZDV4O3VQFkGY1HoQZzyu9Z8/1F4Ji
+					OpJ9lG5dX8TftA== )
+			86400	NSEC	expired.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					7vNKrK9oiQDVphHB+PAUvPunhjXSi7PzC2x9
+					PsqqAduPsCE+qxMP1D1089A0CC7nycuxOt89
+					fg5Uefgs6leWhA== )
+ns.expired.test.	86400	IN A	172.30.0.71
+			86400	RRSIG	A 13 3 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					0Zyps1eqjplCo/HzfEbPQiK5/G2OdhKn1LAH
+					ASfam5fJ3DWXeQQLKLBED91xzOGnbzGEeZ5W
+					R4sPYW0rLwzNag== )
+			86400	NSEC	www.expired.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20260910205139 20260812205139 53998 expired.test.
+					LqPlm/0d74azoWMCfMavwpiD03SqKr85jfBV
+					bT+Wz0nO5RkW/Ne9Rzq8qdsBnYAcLG/RmBx6
+					GG7Ys8hlcek7OQ== )

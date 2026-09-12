@@ -1,0 +1,13 @@
+dominio,dnssec_activo,valida,motivo_fallo,nsec,algoritmo,keysize_bits_aprox,rrset_firmadas,ds_en_padre,observaciones
+unsigned.,no,n/a,DNSSEC no activo en la zona,na,na,na,no,no,ninguna
+alpha.unsigned.,no,n/a,DNSSEC no activo en la zona,na,na,na,no,no,ninguna
+epsilon.unsigned.,no,n/a,DNSSEC no activo en la zona,na,na,na,no,no,ninguna
+zeta.unsigned.,no,n/a,DNSSEC no activo en la zona,na,na,na,no,no,ninguna
+signed.,si,si,,NSEC,13,528,si,si,ninguna
+beta.signed.,si,si,,NSEC,13,528,si,si,ninguna
+gamma.signed.,no,n/a,DNSSEC no activo en la zona,na,na,na,no,no,ninguna
+delta.signed.,si,si,,NSEC3,8,2088,si,si,ninguna
+test.,si,si,,NSEC,13,528,si,si,ninguna
+expired.test.,si,no,RRSIG fuera de vigencia (expirada),NSEC,13,528,si,si,RRSIG fuera de vigencia (expirada)
+nods.test.,si,n/a,Zona insecure (sin DS en el padre),NSEC,13,528,si,no,Sin DS en zona padre -> cadena rota (insecure)
+badalg.test.,si,no,DS no coincide con DNSKEY (algoritmo/hash desalineado),NSEC,13,528,si,si,ninguna

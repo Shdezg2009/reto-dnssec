@@ -1,0 +1,166 @@
+; File written on Fri Sep 11 20:51:39 2026
+; dnssec_signzone version 9.18.50
+delta.signed.		86400	IN SOA	ns.delta.signed. admin.delta.signed. (
+					2026090101 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 8 2 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					BgM+G772w3bDDsIYdHL/vVsL/1TDIrkqECne
+					Aq5CmNeIYjqZOaphq21ZLQ+ZYHXXbq2iN1rJ
+					p9i2P0M2ZUtrijJTO1KOshOFCHeDbAAFEErK
+					aodzIyIkFHpuNSEE5gA2L95t/FTQZQZbZBzy
+					KgbUHNmjMWeUwb+jJxMQ/VFv53csMQ5or5gn
+					vSSIVqg0GYYDyNjB3lI/AsREBTBjJgUPuu60
+					Pu1h/z9OZuDZNxO4XSvGqUEy+ri4iaxrzHyN
+					x9JNL6ghgVP1JRunH8999YXpeKMx5i9yyGH9
+					RLTPmdLbvzXu1YxpTeYBqx2Xpi+oVSGvgpSj
+					gu23HDCMsqGiidQS/Q== )
+			86400	NS	ns.delta.signed.
+			86400	RRSIG	NS 8 2 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					GPULdtgXrvPugA8J4qn+Cqvqc50IrL/XRdaW
+					hPsuX4hhf4PsL6Um1zmXScOUSJssIGeQ69mu
+					9i+fdvYKpWxE68puS4vZLM8UQaQabiVAGcwV
+					dFL6Q+6IhytcvwB+t+IOOD6ZXY+0dsLL/GO2
+					ffkcXRhYlgAQBYD3Zt8/77oc8e0/1p6tNvyv
+					MGYcs7t0mUGY2B94kriodPWgT4k23cmIFXwf
+					mI+9u+7BjWFV0mWetlZ/AqRxn14ZJzvmdGgY
+					PSSfANdhzqCwES+hD5lb9TYhrkOSPO4kElW9
+					rTk/ThVvrWZPBia8whR8Yvpt2SV81+FMz/NQ
+					+K2egF41E71pbHkz7w== )
+			86400	DNSKEY	256 3 8 (
+					AwEAAcIGSOE5p9WtSEY0WIRQgBvkg9HIRIAu
+					mokFulqovUq9mHpYPmiWKBlf/Q7eBQbUEsoi
+					NEE+9zc5bQmKXTmlEJQZgqWuCYoQz9haR9ic
+					lSjUCuXOifYUTpEkGr1/AuF3UOYOziER1KNW
+					Cw4NVQU6fJ13HynnEZNQbN89F0BK1+Y8ef3W
+					UoP0/HVkYzVcipNkuOd9r76+2fD5Z53PQvep
+					6OU0j3l8ScUx3QsxnWUmUq+QSGpqD9en391T
+					5waXG+gBkHpxni1/YZyEoZQg7TW+nmzAGhTv
+					EP+ImrvyuoUrjCnuawOhAh/So9gqSjHhX5sx
+					hX3FaL2+cUO8MP9HosQdHhk=
+					) ; ZSK; alg = RSASHA256 ; key id = 12813
+			86400	DNSKEY	257 3 8 (
+					AwEAAa3nKgQBaKESwB9nKWOC/W6giYq4HUn/
+					7yJhFrIjllwj6xIBn0rZUcZ23NWZoiMcWxA+
+					4WEueMzQ9Caf09LXraeJpv2fefepmTV/oGbi
+					5sgeT3ogXq+/GXgzl5ybCy1khJ3uIvmx198y
+					ejzWZHaW71qz6XpQalKFHdmEF/2No7BWcluU
+					A5UjzsQppbvZwfBA9Fn45u5CvHpN5xz2Oc/e
+					7TR/E/P09cTBJS3Inny+N3h3SIZ3uPSm+4Pl
+					gjdkYJfsCET2htbDnR4NVNxXDqK7KYSHWk7B
+					fDmUUEQ0OJKNFWxbjRSTPINq2Vx/kUZvUWKw
+					/jHzKDaA0qCQ0H+rLzWSA8E=
+					) ; KSK; alg = RSASHA256 ; key id = 50536
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					M56Bt1n7770bD6H+UiReX6BV6/bDQIEEmwRZ
+					rMW+qkkv7uQobD6ziUrpBIGKe6ktBWNjk9Ev
+					X3tYViRK7yhdPq0wuY2bawcn1ylIMec9SW/3
+					vRHOqNWboYB2H2SXsIRAYodP5cEbrfh0p5wC
+					25acr/5ZbCIJ8Y2cYjk4MHw2jlCXelrE0zbQ
+					ZDEqfX1xoQtBraePyWsQu34c3EUPf7rYq2zt
+					/DBAK0UV5G1RVAv/EIsfV/et00mozOYabdDs
+					yP+Gw4Q+GcMACrNwWPCAMSZlXGqxy+PTYVkP
+					iaK+/CpKrP6pPfVodPDwFpZ1KUW95p3WpPCM
+					u6vfBPiP+1v43yBIew== )
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20261011195139 20260911195139 50536 delta.signed.
+					DUAMmynGFvqMlsEtd8xllJYxwCY3avwe1Drx
+					7RM+JWHtpy/puNN9aOuzNjvG1zKiqeLcCvPy
+					zqdqkNsFCH7meQlQiwzVIVUZDq1xoBez8YMX
+					bvbB7XPH0Z90bF2BIfyHowrs/pfll0oIlygB
+					8OAbpxxoYJrLRIi9ELyXuWUzVinVFjXHQLFr
+					DRKuz7/IH8Rqz2mxugmb4tysA4XRu++0Q1Pf
+					h4JFgTnynAIfd9wLYjJR0VaSLMHVR0J/c1o9
+					no2FjXMz/s7TZrO02Ha9PHKrHkcKJELdfE1/
+					xflDkBYiriMkTU+tWnO+DLqMqgchK5aKV9zE
+					UnR9gdaxbLDPqmwb3w== )
+			0	NSEC3PARAM 1 0 0 C6E7F286
+			0	RRSIG	NSEC3PARAM 8 2 0 (
+					20261011195139 20260911195139 12813 delta.signed.
+					j7pzb2Vysdxp0aofgAX50gK7QWYPkf3sCts9
+					rjzz2OuxjprCKDY2jNnSt0ml3XtiJ0sIXe+l
+					gDSrQN8acoHOQ49SBsleFK5RMbZ1G0yHoK5F
+					5etjo+Ecb5X4CQZkwzZIHFFXpTJ5KPHtJx9J
+					+65LpeAnP6o8StBvDqlQeBNePAjLNrgbfueR
+					y1+Xd5PTr0xv1FlWt3j4QenO/RswHfjdJCoQ
+					h4p/RvvhlBR9KjQVXVwwNDMFxWnr/KakePnw
+					rHo0Pw9stbKjXBqghKdZBsRdp4tYzPoBQH7p
+					wC9sfsbbgluHTFTVxOY97yAhIUg3YO4Q0Q3c
+					BnU3IQ4cHX2n5l+eCw== )
+5CQBBJHH5SJRB7M6JQJKH208ROO4IFON.delta.signed. 86400 IN	NSEC3 1 0 0 C6E7F286 (
+					9GHASLU8DFT68JNUG044LTKQIPH1DVQ7
+					A RRSIG )
+			86400	RRSIG	NSEC3 8 3 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					GkBYZhamUsHvdy3MdpX/GyqBJ2ZbM8LZTfkV
+					cb/FDq7SPPe2AEfHxQdidDSrXpzHUfEliUBP
+					/hvum//47TEI2mPXsKQEHc8ZpvEqmCcxTJ85
+					WN3vcyMK9tA6DjQk1zMq/WG+0rIIlf0rXwpM
+					KwEo/CDDPaezhI6ZYw2OaUzhEpxNSLEE3kap
+					ZhWXZ0WHDs6Umz0vWE7Fp5wIzZEdzHi8+9RV
+					dKvTC4T50/06KPL7cAoaV6tQIsQwLln3ti1t
+					v4uWeX1SaBJDiEKGeruRk7fC0xwM3G4cApzh
+					S/PtT+t/y3zIgmNLEsnpaX+1oMi7rwavfHg8
+					WsyEsbktitLby/Ms5g== )
+www.delta.signed.	86400	IN A	172.30.0.80
+			86400	RRSIG	A 8 3 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					h+CFyspYWIqfZgCik4bJc1cLec3qkx44jaox
+					GqpYjH8VnbHZMfIaIeMK6GqdpFYWY72PqW9u
+					ruSwOu8w5h3uMKdPfdssRxmkhnXZScYHhqYH
+					DwV2HWOdMHS7YmJO7Nrr3dQPZtVfjb/jqSAn
+					pdXRXnTCyk4uBaxasPKsMfYAfWfkR2kBYodI
+					Jh5whh1sMCEx05OhwCvneS4YndwO1aMMmXX9
+					WP6ZJZ+fGr39RG3RCOHIVPqwzfFwhPv7soty
+					l4RFLyyct0X9t7Xi/GR+6y2HTkKDjsDomSBN
+					I22DOEqml2GbWkD0Cgvskt8ddjMsqK1uNSXV
+					phNDrRQg5k1qi/AkUQ== )
+ns.delta.signed.	86400	IN A	172.30.0.80
+			86400	RRSIG	A 8 3 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					AZdwvKiRLbxIzW6QaoxdELEHpgOZTO7Flu/a
+					d3y0+4QWaSS7gGtXphqvIZYSyJLwjArdF/Nt
+					ewop1Z8b1OZLaJHZ9q2NkTB8I/todzD6kRXG
+					X2B0HApypWDZJ99leOyRSCDXPOwSvMZeokku
+					2gfaj/nfLexOqV8RelZ//R+twns91xkG3Hqy
+					TF0kzOD/ICyf0v8DG8vZI9NBvjnK1qNXEJWu
+					unTzlxCEIp6eip3aYvJSMquXx2BnS92AY5hb
+					+5VdbP7KjM3NNccTSPoCHDLoS/FekIsJm+nA
+					iQNGE8Sh2Xq9CqlCcUFMzhEEIbyQEFwTGaEd
+					XuKCtqIAgxpZaAt78w== )
+24MMSTM235Q6U601CMHGOFTF49GQUISA.delta.signed. 86400 IN	NSEC3 1 0 0 C6E7F286 (
+					5CQBBJHH5SJRB7M6JQJKH208ROO4IFON
+					NS SOA RRSIG DNSKEY NSEC3PARAM )
+			86400	RRSIG	NSEC3 8 3 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					BgMFoiVPk/nhP7zgcDu8p5715MCDhCRkQ52V
+					0x5ynk9trmk6w0vXLBiwQVxQcLS+LOZqRLnt
+					RHQinI6hb/dMDU+Jdk9jKq1CUhm9mfBYq7y8
+					MC3JEgqhUDSSBF0OtNGZ7QOVIu4+kzOd6R8Q
+					lh/Yo6Ox1FA8BNBLcA7ggEaYHrt7KXvSO9FA
+					WYHYjkqDykIuunX8tDbKVxOek1IhUH4LKfxf
+					kA3bXh0F2NS/7RW8wx5GbLWiFddqp0HhMmtY
+					FpP3NhIzfZSUxj3+M7Zfq29gPL0IwqX+HwVg
+					awfXX63NcuBwECVI5UcgTrnmBiF0I0F92lED
+					/mvCQrPJm1noMOsl+Q== )
+9GHASLU8DFT68JNUG044LTKQIPH1DVQ7.delta.signed. 86400 IN	NSEC3 1 0 0 C6E7F286 (
+					24MMSTM235Q6U601CMHGOFTF49GQUISA
+					A RRSIG )
+			86400	RRSIG	NSEC3 8 3 86400 (
+					20261011195139 20260911195139 12813 delta.signed.
+					mD1QlfG+kh3kyQUTntoLWMEpNdYAFG1Tl9Tf
+					YDSBHvoF+d1h5Og7VxXAJJaATJJgIuCFr5vj
+					XrCRDsRk/dmSgru9f2cI6J6WV3ntBqKbxjDi
+					F1i21o+6xQj6Vn/0zh92/dcZLLBkKVF047yt
+					IeTZqffAMI1+q7gaOKoqHWXQ1bnZeE7Xb3vP
+					nUaAoqMldj0qFCGsE3M8KJe6gt6uGS8BubNe
+					x8thZ/7sjBeHKGx/+SnYSYePgwe7yYKslsl9
+					1/cx1Ly6LOgHQJDSiMR+uNceRsbRJyasa6mQ
+					RD15sTiIoBXo7/+Nf4hYcyOSaJh/YE79tBje
+					chezTeVs7CUaEMC69w== )

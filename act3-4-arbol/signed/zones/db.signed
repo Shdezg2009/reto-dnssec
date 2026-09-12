@@ -1,0 +1,16 @@
+$TTL 86400
+@   IN  SOA ns.signed. admin.signed. (
+        2026090101
+        3600 900 604800 86400 )
+@                 IN  NS  ns.signed.
+ns.signed.        IN  A   172.30.0.40
+; ---- beta (se firmará; el DS se agrega después) ----
+beta              IN  NS  ns.beta.signed.
+ns.beta.signed.   IN  A   172.30.0.50
+; ---- gamma (control, sin firmar) ----
+gamma             IN  NS  ns.gamma.signed.
+ns.gamma.signed.  IN  A   172.30.0.60
+beta.signed.		IN DS 14925 13 2 26903459C97917F51FEF7C3787120ABBF854A2AC901779E6B360C411 02158A76
+delta            IN  NS  ns.delta.signed.
+ns.delta.signed. IN  A   172.30.0.80
+delta.signed.		IN DS 50536 8 2 BB597568955B206F5627E31947F6CE71572EED9B4C455247BF81DC4B BC8BD88F

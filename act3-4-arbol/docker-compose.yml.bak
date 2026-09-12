@@ -1,0 +1,187 @@
+services:
+  root:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: root
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./root/named.conf:/etc/bind/named.conf:ro
+      - ./root/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.10
+  unsigned:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: unsigned
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./unsigned/named.conf:/etc/bind/named.conf:ro
+      - ./unsigned/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.20
+  alpha:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: alpha
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./alpha/named.conf:/etc/bind/named.conf:ro
+      - ./alpha/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.21
+  signed:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: signed
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./signed/named.conf:/etc/bind/named.conf:ro
+      - ./signed/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.40
+  beta:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: beta
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./beta/named.conf:/etc/bind/named.conf:ro
+      - ./beta/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.50
+  gamma:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: gamma
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./gamma/named.conf:/etc/bind/named.conf:ro
+      - ./gamma/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.60
+  recursive1:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: recursive1
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./recursive1/named.conf:/etc/bind/named.conf:ro
+      - ./recursive1/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.100
+  recursive2:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: recursive2
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./recursive2/named.conf:/etc/bind/named.conf:ro
+      - ./recursive2/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.150
+  test:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: test
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./test/named.conf:/etc/bind/named.conf:ro
+      - ./test/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.70
+  delta:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: delta
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./delta/named.conf:/etc/bind/named.conf:ro
+      - ./delta/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.80
+  expired:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: expired
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./expired/named.conf:/etc/bind/named.conf:ro
+      - ./expired/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.71
+  nods:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: nods
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./nods/named.conf:/etc/bind/named.conf:ro
+      - ./nods/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.72
+  badalg:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: badalg
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./badalg/named.conf:/etc/bind/named.conf:ro
+      - ./badalg/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.73
+  test:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: test
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./test/named.conf:/etc/bind/named.conf:ro
+      - ./test/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.70
+  delta:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: delta
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./delta/named.conf:/etc/bind/named.conf:ro
+      - ./delta/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.80
+  expired:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: expired
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./expired/named.conf:/etc/bind/named.conf:ro
+      - ./expired/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.71
+  nods:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: nods
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./nods/named.conf:/etc/bind/named.conf:ro
+      - ./nods/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.72
+  badalg:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: badalg
+    command: ["-g", "-c", "/etc/bind/named.conf"]
+    volumes:
+      - ./badalg/named.conf:/etc/bind/named.conf:ro
+      - ./badalg/zones:/var/lib/bind
+    networks:
+      dnslab:
+        ipv4_address: 172.30.0.73
+networks:
+  dnslab:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.0.0/24

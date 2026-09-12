@@ -1,0 +1,70 @@
+; File written on Fri Sep 11 20:51:39 2026
+; dnssec_signzone version 9.18.50
+badalg.test.		86400	IN SOA	ns.badalg.test. admin.badalg.test. (
+					2026090101 ; serial
+					3600       ; refresh (1 hour)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 13 2 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					lU3QfB3rkMUiO2QjdZxt6ZdHCKPBEBU8RKQl
+					a6weGkTfaCGTuUVbAsgyuZA8mKRjc2nl23ZY
+					4YHEuM31GO8ZmQ== )
+			86400	NS	ns.badalg.test.
+			86400	RRSIG	NS 13 2 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					TXv5WCm1zjN/F4BbHTHIM2cMmgTBLZrUfR01
+					Eur7LZZyv7Ue5TQ4cfRjOf54bCBOa4n4V2Rb
+					UEI7r3jtmFu9bg== )
+			86400	NSEC	ns.badalg.test. NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 13 2 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					60TEJRA8kzr3jInqPg1bE5lJ6KJ0DlMnfGc3
+					KI45J+/6IEOh87BQtBrt2mhSSXysGw8zjsXj
+					fKadEldZzUwxkA== )
+			86400	DNSKEY	256 3 13 (
+					MZyb4llSGUZzmODAJjb3TkvODhEWfw0giiGh
+					A43qhyDbNWoH4d82s+nVw4wDJk1Pt1VU7GdG
+					A6TLIpqE2eDEtA==
+					) ; ZSK; alg = ECDSAP256SHA256 ; key id = 19139
+			86400	DNSKEY	257 3 13 (
+					Wc59uxzrcPjjhaw+bXOQD8CvelwiDT+n2xdT
+					K8asiQUIXSl7zpwIz3JqlxEbP6SIgFBkKp1W
+					EINyyjB/P0xpOg==
+					) ; KSK; alg = ECDSAP256SHA256 ; key id = 49701
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					STq+E9f+OhFtfm7vaVDpVocuvDYeBrcOXJw0
+					GCCvK22pSx54Q/S2JnU2A8tFzoAvLbWtHA/F
+					5FO3ANkhMSAeCg== )
+			86400	RRSIG	DNSKEY 13 2 86400 (
+					20261011195139 20260911195139 49701 badalg.test.
+					OyN9Kt+IJrk8O5n2Hqv3TV+r0bXBGZAz6+34
+					XlxSWTrUIbhfZy2sNrU1+Bdqpvc6vtQagopx
+					BoZIf91HCJKAaA== )
+ns.badalg.test.		86400	IN A	172.30.0.73
+			86400	RRSIG	A 13 3 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					Y4A68bJhQgWb5we/e9qoSLtlT5rNf+6gMn0Z
+					zgvDrKGu2GBlB5kH6fz6b/0iPhF7VSXeQ4/U
+					X9JgOu7BY48zAw== )
+			86400	NSEC	www.badalg.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					HLRqMiTrsY2WslByrST7i8upnohGf0LWhRc6
+					pO+NKndp7Asr2uzI38K3ra/99hHVjAzfPg7x
+					5x5/po8G8S6ykQ== )
+www.badalg.test.	86400	IN A	172.30.0.73
+			86400	RRSIG	A 13 3 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					DyP/AAEqJWZCcPGZzdtniaqeEiduy9meW7fY
+					DwhwhQbfo26OowW3t+27JdLBHUPCXRBk/Cy2
+					t//0M+uasx+3iw== )
+			86400	NSEC	badalg.test. A RRSIG NSEC
+			86400	RRSIG	NSEC 13 3 86400 (
+					20261011195139 20260911195139 19139 badalg.test.
+					emnFGVk0w2SquRHHO/F9qmPreyttvUkmi7QT
+					9zLZEtj6dWo75Ke7vt0EtZqwtKZoR+ldzbyP
+					RHNW8WGUg4Jkog== )

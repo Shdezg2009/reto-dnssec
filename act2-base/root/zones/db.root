@@ -1,0 +1,12 @@
+$TTL 86400
+@   IN  SOA ns.root. admin.root. (
+        2026081601 ; serial
+        3600       ; refresh
+        900        ; retry
+        604800     ; expire
+        86400 )    ; minimum
+@            IN  NS  ns.root.
+ns.root.     IN  A   172.30.0.10
+; ---- delegacion al TLD unsigned ----
+unsigned.    IN  NS  ns.unsigned.
+ns.unsigned. IN  A   172.30.0.20
