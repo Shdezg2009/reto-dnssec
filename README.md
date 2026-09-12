@@ -45,21 +45,26 @@ la delegación jerárquica real del DNS.
 
 ## 3. Cadena de confianza
 
-La validación parte del **trust anchor** (la KSK pública de la raíz, instalada
-manualmente en recursive2, ya que en un sandbox no aplica la raíz real de
-Internet) y desciende nivel por nivel. En cada delegación, la zona padre publica
-un registro **DS** que es el hash de la KSK del hijo:
+La validacion parte del **trust anchor** (la KSK publica de la raiz, instalada
+manualmente en recursive2, ya que en un sandbox no aplica la raiz real de
+Internet) y desciende nivel por nivel. En cada delegacion, la zona padre publica
+un registro **DS** que es el hash de la KSK del hijo.
 
-raíz (KSK = trust anchor en recursive2)
-├── DS(signed) → signed (KSK/ZSK propias)
-│ ├── DS(beta) → beta.signed [NSEC, ECDSA]
-│ ├── DS(delta) → delta.signed [NSEC3, RSA]
-│ └── (gamma sin DS) → gamma.signed [insecure]
-└── DS(test) → test (KSK/ZSK propias)
-├── DS(expired) → expired.test [firma vencida]
-├── (nods sin DS) → nods.test [cadena rota]
-└── DS'(badalg) → badalg.test [DS desalineado]
-
+```text
+raiz  (KSK = trust anchor en recursive2)
+|
++-- DS(signed) --> signed  [KSK/ZSK propias, alg 13]
+|                   |
+|                   +-- DS(beta)  --> beta.signed   [NSEC,  ECDSA]  OK
+|                   +-- DS(delta) --> delta.signed  [NSEC3, RSA]    OK
+|                   +-- (sin DS)  --> gamma.signed  [insecure]
+|
++-- DS(test)   --> test    [KSK/ZSK propias, alg 13]
+                    |
+                    +-- DS(expired)  --> expired.test  [firma vencida]  FALLA
+                    +-- (sin DS)     --> nods.test     [cadena rota]    INSECURE
+                    +-- DS'(badalg)  --> badalg.test   [DS desalineado] FALLA
+```
 
 Cada firma se realiza con `dnssec-keygen` (genera KSK y ZSK) y `dnssec-signzone`
 (produce los RRSIG, el registro NSEC/NSEC3 y el `dsset` con el DS para el padre).
